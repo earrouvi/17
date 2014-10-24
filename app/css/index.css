@@ -1,0 +1,92 @@
+body {
+	font-size: 1em;
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	background: url(../images/pattern_small.png);
+	color: #03042b;
+}
+
+h1 {
+	font-family: 'Lemon', Arial, sans-serif;
+}
+
+h1, #contentBlock {
+	margin-left: 260px;
+}
+
+h2, h3, h4, h5 {
+	font-family: 'Aclonica', Arial, sans-serif;
+	color: #ed145b;
+}
+
+a {
+	text-decoration: none;
+	color: #03042b;
+	font-family: 'Aclonica', Arial, sans-serif;
+	font-size: 1.8em;
+}
+
+#menuBlock {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 260px;
+	background-color: #03042b;
+}
+
+#menuBlock div {
+	background-color: #ecdecd;
+	color: #03042b;
+	margin: 12px 0;
+	padding: 16px 8px;
+	cursor: pointer;
+	font-family: 'Aclonica', Arial, sans-serif;
+	font-size: 1.8em;
+}
+
+#menuBlock div:hover {
+	color: #ec8ec8;
+	border-right: 8px solid #ec8ec8;
+}
+
+#menuBlock div.active {
+	color: #ed145b;
+	border-right: 8px solid #ed145b;
+}
+
+.newsPost {
+	background-color: #ecdecd;
+	border-radius: 8px;
+	width: 60%;
+	padding: 8px;
+	margin: 12px;
+}
+
+.caPart {
+	font-size: 3em;
+	font-weight: 700;
+	text-align: center;
+	background-color: #ed145b;
+	color: #ecdecd;
+	width: 700px;
+	padding: 8px 12px 12px;
+	border-radius: 12px;
+}
+
+.caPart {
+    background-color: #03042b;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+.caPart:hover {
+    background-color: #ed145b;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
