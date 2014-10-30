@@ -1,16 +1,15 @@
 body {
 	font-size: 1em;
 	font-family: 'Source Sans Pro', Arial, sans-serif;
-	background: url(../images/pattern_small.png);
-	color: #03042b;
+	background-color: #03042b;
+	color: #ecdecd;
+	text-align: justify;
 }
 
 h1 {
 	font-family: 'Lemon', Arial, sans-serif;
-}
-
-h1, #contentBlock {
-	margin-left: 260px;
+	color: #ed145b;
+	font-size: 2.4em;
 }
 
 h2, h3, h4, h5 {
@@ -19,10 +18,11 @@ h2, h3, h4, h5 {
 }
 
 a {
-	text-decoration: none;
-	color: #03042b;
-	font-family: 'Aclonica', Arial, sans-serif;
-	font-size: 1.8em;
+	color: #ed145b;
+}
+
+.container {
+	text-align: center;
 }
 
 #menuBlock {
@@ -30,13 +30,13 @@ a {
 	top: 0;
 	left: 0;
 	height: 100%;
-	width: 260px;
-	background-color: #03042b;
+	width: 300px;
+	background: url(../images/pattern_small.png);
 }
 
 #menuBlock div {
-	background-color: #ecdecd;
-	color: #03042b;
+	background-color: #03042b;
+	color: #ecdecd;
 	margin: 12px 0;
 	padding: 16px 8px;
 	cursor: pointer;
@@ -55,26 +55,27 @@ a {
 }
 
 .newsPost {
-	background-color: #ecdecd;
 	border-radius: 8px;
 	width: 60%;
 	padding: 8px;
-	margin: 12px;
+	margin: auto;
+	text-align: justify;
 }
 
 .caPart {
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: 700;
 	text-align: center;
 	background-color: #ed145b;
-	color: #ecdecd;
-	width: 700px;
+	color: #03042b;
+	width: 500px;
+	margin: auto;
 	padding: 8px 12px 12px;
-	border-radius: 12px;
+	border-radius: 8px;
 }
 
 .caPart {
-    background-color: #03042b;
+    background-color: #ecdecd;
     -webkit-transition: background-color 1000ms linear;
     -moz-transition: background-color 1000ms linear;
     -o-transition: background-color 1000ms linear;
