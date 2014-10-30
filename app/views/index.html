@@ -12,9 +12,9 @@
 	<body ng-app="17App" ng-controller="MenuCtrl">
 		<div id="menuBlock">
 			<div ng-class="{ active: activeLink('what') }" ng-click="goToPage('what')">What what</a></div>
-			<div class="sublink" ng-show="activeLink('what')" ng-class="{ active: displaySubPage('jeudi') }" ng-click="displaySubPage('jeudi')">Le Jeudi</a></div>
-			<div class="sublink" ng-show="activeLink('what')" ng-class="{ active: displaySubPage('vendredi') }" ng-click="displaySubPage('vendredi')">Le Vendredi</a></div>
-			<div class="sublink" ng-show="activeLink('what')" ng-class="{ active: displaySubPage('weekend') }" ng-click="displaySubPage('weekend')">Le week-end</a></div>
+			<div class="sublink" ng-show="activeLink('what')" ng-class="{ active: showSub['jeudi'] }" ng-click="displaySubPage('jeudi')">Le Jeudi</a></div>
+			<div class="sublink" ng-show="activeLink('what')" ng-class="{ active: showSub['vendredi'] }" ng-click="displaySubPage('vendredi')">Le Vendredi</a></div>
+			<div class="sublink" ng-show="activeLink('what')" ng-class="{ active: showSub['weekend'] }" ng-click="displaySubPage('weekend')">Le week-end</a></div>
 
 			<div ng-class="{ active: activeLink('news') }" ng-click="goToPage('news')">Les news</a></div>
 			<div ng-class="{ active: activeLink('fanfrale') }" ng-click="goToPage('fanfrale')">La Fanfrale &#9733;</a></div>

@@ -8,7 +8,12 @@ angular.module('controllers')
 		};
 
 		$scope.displaySubPage = function(linkName) {
+			console.log("dis")
+			$scope.showSub['jeudi'] = false;
+			$scope.showSub['vendredi'] = false;
+			$scope.showSub['weekend'] = false;
 			$scope.showSub[linkName] = true;
+			$scope.showSub['any'] = true;
 		};
 
 		$scope.goToPage = function(page) {
@@ -35,6 +40,7 @@ angular.module('controllers')
 			$scope.showSub['jeudi'] = false;
 			$scope.showSub['vendredi'] = false;
 			$scope.showSub['weekend'] = false;
+			$scope.showSub['any'] = false;
 
 			$scope.randArray = [];
 			$scope.generateRandomPhotos();

@@ -56,8 +56,14 @@ a {
 }
 
 #menuBlock .sublink {
-	opacity: 0.9;
+	opacity: 0.85;
+	background-color: #181947;
+	margin: 4px 0;
 	padding: 16px 32px;
+}
+
+#menuBlock .sublink:hover, #menuBlock .sublink.active {
+	opacity: 1;
 }
 
 #contentBlock {
@@ -101,4 +107,9 @@ a {
     -o-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
+}
+
+.important {
+	color: #ed145b;
+	font-weight: 600;
 }
