@@ -23,6 +23,7 @@ a {
 
 .container {
 	text-align: center;
+	width: 70%;
 }
 
 #menuBlock {
@@ -42,6 +43,7 @@ a {
 	cursor: pointer;
 	font-family: 'Aclonica', Arial, sans-serif;
 	font-size: 1.8em;
+	line-height: 40px;
 }
 
 #menuBlock div:hover {
@@ -54,12 +56,17 @@ a {
 	border-right: 8px solid #ed145b;
 }
 
+#contentBlock {
+	position: absolute;
+	left: 300px;
+	width: 100%;
+}
+
 .textBlock {
 	border-radius: 8px;
-	width: 60%;
 	padding: 8px;
-	margin: auto;
 	text-align: justify;
+	margin-left: 69px;
 }
 
 .caPart {
