@@ -15,7 +15,7 @@ angular.module('17App', [
 	        templateUrl: '../../../17/app/views/what.html',
 	        controller: 'WhatCtrl'
 	    }).when('/news', {
-	        templateUrl: '../../../17/app/views/main.html',
+	        templateUrl: '../../../17/app/views/news.html',
 	        controller: 'MainCtrl'
 	    }).when('/contact', {
 	        templateUrl: '../../../17/app/views/contact.html',
