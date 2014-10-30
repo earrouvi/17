@@ -16,12 +16,19 @@
 			<div ng-class="{ active: activeLink('contact') }" ng-click="goToPage('contact')">Le contact</a></div>
 		</div>
 		<div id="contentBlock" ng-view=""></div>
+		<div id="photosBlock">
+			<div class="photo photo{{randomNb()}}"></div>
+			<div class="photo photo{{randomNb()}}"></div>
+			<div class="photo photo{{randomNb()}}"></div>
+			<div class="photo photo{{randomNb()}}"></div>
+		</div>
 
 		<script src="../../../17/bower_components/jquery/dist/jquery.js"></script>
 	    <script src="../../../17/bower_components/angular/angular.js"></script>
 	    <script src="../../../17/bower_components/angular-route/angular-route.js"></script>
+	    <script src="../../../17/bower_components/momentjs/moment.js"></script>
+	    <script src="../../../17/bower_components/underscore/underscore.js"></script>
 
-        <script type="text/javascript" src="../../../17/bower_components/momentjs/moment.js"></script>
 	    <script type="text/javascript" src="../../../17/app/scripts/app.js"></script>
 	    <script type="text/javascript" src="../../../17/app/scripts/what.js"></script>
 	    <script type="text/javascript" src="../../../17/app/scripts/main.js"></script>
