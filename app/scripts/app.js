@@ -9,16 +9,16 @@ angular.module('17App', [
 .config(['$routeProvider', function ($routeProvider) {
 	$routeProvider
 	    .when('/', {
-	        templateUrl: '../views/what.html',
+	        templateUrl: 'app/views/what.html',
 	        controller: 'WhatCtrl'
 	    }).when('/what', {
-	        templateUrl: '../views/what.html',
+	        templateUrl: 'app/views/what.html',
 	        controller: 'WhatCtrl'
 	    }).when('/news', {
-	        templateUrl: '../views/main.html',
+	        templateUrl: 'app/views/main.html',
 	        controller: 'MainCtrl'
 	    }).when('/contact', {
-	        templateUrl: '../views/contact.html',
+	        templateUrl: 'app/views/contact.html',
 	        controller: 'ContactCtrl'
 	    })
 	    .otherwise({
