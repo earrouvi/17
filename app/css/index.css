@@ -46,8 +46,8 @@ a {
 }
 
 #menuBlock div:hover {
-	color: #ec8ec8;
-	border-right: 8px solid #ec8ec8;
+	color: #ffc700;
+	border-right: 8px solid #ffc700;
 }
 
 #menuBlock div.active {
@@ -116,4 +116,9 @@ a {
 
 .file {
 	text-align: center;
+}
+
+.newsDate {
+	color: #ffc700;
+	font-style: italic;
 }
