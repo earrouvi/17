@@ -1,0 +1,29 @@
+.etoile-div {
+	height: 240px;
+}
+
+.etoile-div > div {
+	height: 240px;
+	display: inline-block;
+}
+
+.etoile-div h3 {
+	color: #ecdecd;
+}
+
+.etoile-info {
+	margin-left: 24px;
+	vertical-align: middle;
+}
+
+.etoile {
+	background: no-repeat;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	float: left;
+}
+
+.etoile-fanfrale { background-image: url(../images/etoile/fanfrale-small.png); }
+.etoile-wc { background-image: url(../images/etoile/wc-small.png); }
+.etoile-sr { background-image: url(../images/etoile/sr-small.png); }
