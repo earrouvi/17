@@ -55,6 +55,11 @@ a {
 	border-right: 8px solid #ed145b;
 }
 
+#menuBlock .sublink {
+	opacity: 0.9;
+	padding: 16px 32px;
+}
+
 #contentBlock {
 	position: absolute;
 	left: 300px;
@@ -97,37 +102,3 @@ a {
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
 }
-
-#photosBlock {
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	height: 100%;
-	width: 20%;
-}
-
-.photo {
-	background: no-repeat;
-	height: 300px;
-	width: 100%;
-	margin-bottom: 8px;
-	border-radius: 4px;
-}
-
-.photo1 { background-image: url(../images/photo1.png); }
-.photo2 { background-image: url(../images/photo2.png); }
-.photo3 { background-image: url(../images/photo3.png); }
-.photo4 { background-image: url(../images/photo4.png); }
-.photo5 { background-image: url(../images/photo5.png); }
-.photo6 { background-image: url(../images/photo6.png); }
-.photo7 { background-image: url(../images/photo7.png); }
-.photo8 { background-image: url(../images/photo8.png); }
-.photo9 { background-image: url(../images/photo9.png); }
-.photo10 { background-image: url(../images/photo10.png); }
-.photo11 { background-image: url(../images/photo11.png); }
-.photo12 { background-image: url(../images/photo12.png); }
-.photo13 { background-image: url(../images/photo13.png); }
-.photo14 { background-image: url(../images/photo14.png); }
-.photo15 { background-image: url(../images/photo15.png); }
-.photo16 { background-image: url(../images/photo16.png); }
-.photo17 { background-image: url(../images/photo17.png); }
