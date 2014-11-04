@@ -1,3 +1,6 @@
 # redirection pour le site des 17 ans
 RewriteEngine On
 RewriteRule ^17/?$ 17/app/views/ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule api/(.*)$ 17/app/api17.php?request=$1 [QSA,NC,L]
