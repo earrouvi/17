@@ -2,6 +2,7 @@ body {
 	font-size: 1em;
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	background-color: #03042b;
+	background-image: url(../images/background.png);
 	color: #ecdecd;
 	text-align: justify;
 }
@@ -37,6 +38,7 @@ a {
 #menuBlock div {
 	background-color: #03042b;
 	color: #ecdecd;
+	background-image: url(../images/background.png);
 	margin: 12px 0;
 	padding: 16px 8px;
 	cursor: pointer;
