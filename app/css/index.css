@@ -82,6 +82,10 @@ a {
 	margin-left: 2%;
 }
 
+.textBlock h3 {
+	text-align: left;
+}
+
 .caPart {
 	font-size: 2em;
 	font-weight: 700;

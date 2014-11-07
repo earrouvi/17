@@ -1,9 +1,8 @@
 .etoile-div {
-	height: 240px;
+	margin-left: 8% !important;
 }
 
 .etoile-div > div {
-	height: 240px;
 	display: inline-block;
 }
 
@@ -14,16 +13,35 @@
 .etoile-info {
 	margin-left: 24px;
 	vertical-align: middle;
+	max-width: 50%;
 }
 
 .etoile {
-	background: no-repeat;
-	width: 200px;
-	height: 200px;
 	display: inline-block;
-	float: left;
+	height: 88px;
 }
 
-.etoile-fanfrale { background-image: url(../images/etoile/fanfrale-small.png); }
-.etoile-wc { background-image: url(../images/etoile/wc-small.png); }
-.etoile-sr { background-image: url(../images/etoile/sr-small.png); }
+@media (min-width: 500px) {
+	.etoile-div {
+		height: 220px;
+	}
+	.etoile img {
+		float: left;
+	}
+	.etoile-info {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 500px) {
+	.etoile-div {
+		max-width: 320px;
+		margin-bottom: 51px;
+	}
+	.etoile img {
+		clear: both;
+	}
+	.etoile-info {
+		display: block;
+	}
+}
