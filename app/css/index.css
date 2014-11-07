@@ -188,3 +188,7 @@ a {
 #daysDetail > .oneDay:first-child {
     margin-left: 0;
 }
+
+.whirly {
+	margin-top: 100px !important;
+}

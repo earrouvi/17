@@ -27,6 +27,7 @@ angular.module('controllers')
 		};
 
 		$scope.init = function() {
+			jQuery(document).scroll(0);
 			$scope.randArray = [];
 			$scope.generateRandomPhotos();
 		};
