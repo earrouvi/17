@@ -17,10 +17,10 @@ angular.module('controllers')
 		};
 
 		$scope.generateRandomPhotos = function() {
-			for (var i = 0; i < 4; i++) {
+			for (var i = 0; i < 6; i++) {
 				var rand = Math.floor(Math.random() * 17) + 1;
 				while (_.contains($scope.randArray, rand)) {
-					rand = (rand + 1) % 17;
+					rand = rand % 17 + 1;
 				}
 				$scope.randArray.push(rand);
 			}

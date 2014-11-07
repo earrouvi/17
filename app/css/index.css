@@ -22,6 +22,11 @@ a {
 	color: #ed145b;
 }
 
+.bigAssContainer {
+	background-color: #03042b;
+	margin-left: 300px;
+}
+
 .container {
 	text-align: center;
 }
@@ -36,8 +41,8 @@ a {
 }
 
 #menuBlock div {
-	background-color: #03042b;
 	color: #ecdecd;
+	background-color: #03042b;
 	background-image: url(../images/background.png);
 	margin: 12px 0;
 	padding: 16px 8px;
@@ -69,16 +74,16 @@ a {
 }
 
 #contentBlock {
-	position: absolute;
-	left: 300px;
-	width: 60%;
+	display: inline-block;
+	width: 83%;
+	vertical-align: top;
 }
 
 .textBlock {
 	border-radius: 8px;
 	padding: 8px;
 	text-align: justify;
-	margin-left: 69px;
+	margin-left: 2%;
 }
 
 .caPart {

@@ -1,45 +1,15 @@
 #photosBlock {
 	display: inline-block;
-	position: absolute;
 	right: 20px;
-	height: 100%;
+	width: 15%;
+	margin-bottom: 12px;
+	margin-left: 1%;
+	overflow: hidden;
 }
 
-@media (min-width: 1500px) {
-	#photosBlock {
-		width: 300px;
-	}
-
-	.photo {
-		height: 300px;
-	}
-}
-
-@media (max-width: 1500px) and (min-width: 1000px) {
-	#photosBlock {
-		width: 200px;
-	}
-
-	.photo {
-		height: 200px;
-	}
-}
-
-@media (max-width: 1000px) {
-	#photosBlock {
-		width: 10%;
-	}
-
-	.photo {
-		height: 10%;
-	}
-}
-
-.photo {
-	background: no-repeat;
-	width: 100%;
-	margin-bottom: 8px;
-	border-radius: 4px;
+img {
+	max-width: 100%;
+	border-radius: 8px;
 }
 
 .photo1 { background-image: url(../images/photo1.png); }

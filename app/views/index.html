@@ -16,11 +16,13 @@
 			<div ng-class="{ active: activeLink('fanfrale') }" ng-click="goToPage('fanfrale')">La Fanfrale &#9733;</a></div>
 			<div ng-class="{ active: activeLink('contact') }" ng-click="goToPage('contact')">Le contact</a></div>
 		</div>
-		<div id="contentBlock" ng-view=""></div>
-		<div id="photosBlock">
-			<div ng-repeat="num in randArray" class="photo photo{{num}}"></div>
+		<div class="bigAssContainer">
+			<div id="contentBlock" ng-view=""></div>
+			<div id="photosBlock">
+				<img src="../../../17/app/images/photo{{num}}.png" ng-repeat="num in randArray" />
+			</div>
 		</div>
-
+		
 		<script src="../../../17/bower_components/jquery/dist/jquery.js"></script>
 	    <script src="../../../17/bower_components/angular/angular.js"></script>
 	    <script src="../../../17/bower_components/angular-route/angular-route.js"></script>
