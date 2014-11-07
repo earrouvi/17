@@ -4,19 +4,19 @@
 		Ca part dans {{ ca_part }} minutes !!
 	</div>
 
-	<div class="textBlock" ng-show="!showSub['any']">
+	<div class="textBlock">
 		<h3>Bonjour à tous,</h3>
 		<p>Comme tu le sais, la Fanfrale fêtera ses 17 ans l'année prochaine. Événement très attendu par bon nombre de fanfarons, il sera l'occasion de réunir un maximum de générations, de participer à un pèlerinage des lieux sacrés de Nantes (un petit tour de bateau ?), de montrer aux autres ce qu'on appelle la mongolie et surtout de célébrer en grandes pompes ce 17ème anniversaire. Le projet commence à se mettre en place, voici les premiers éléments d'organisation, en espérant faire monter la fébrilité !</p>
 		<p>Pour toute question, n'hésite pas <a href="mailto:17ansfanfrale@gmail.com">à nous écrire</a>.</p>
 	</div>
 
-	<div class="textBlock" ng-show="!showSub['any']">
+	<div class="textBlock">
 		<h3>Où et quand ?</h3>
 		<p>Les 17 ans auront lieu sur un week-end prolongé, du <span class="important">jeudi 7 mai 2015</span> au soir au <span class="important">dimanche 10 mai 2015</span> fin d'après-midi. L'objectif est de proposer un week-end mémorable à la fois pour les plus vieux, pour les jeunes et pour les autres fanfares. La première partie du week-end (jeudi et vendredi) se déroulera à Nantes même.
 		<br/>Les événements du samedi et dimanche se dérouleront à l'extérieur de Nantes sur un grand terrain avec des installations en dur : <span class="important">le Clos de Soucelles</span>.</p>
 	</div>
 
-	<div class="textBlock" ng-show="!showSub['any']">
+	<div class="textBlock">
 		<h3>Comment puis-je participer ?</h3>
 		<p>La Fanfrale t'a nourri(e), bercé(e) et aujourd'hui tu voudrais lui faire savoir ta gratitude, mais tu n'as pas beaucoup de temps à lui consacrer car tu dois te rendre à Aubenas. Ne t'en fais pas, nous avons pensé à toi : tu peux participer au financement de ce week-end inoubliable, et en profiter pour recevoir des goodies ! Choisis ton pack de mécène, fais un chèque de beaucoup d'argent et c'est parti !</p>
 
@@ -26,7 +26,14 @@
 		<p>Pour connaître les modalités de paiement possibles, contacte le <a href="mailto:17ansfanfrale@gmail.com">staff dictature-17</a>.</p>
 	</div>
 
-
+	<div id="daysDetail">
+		<div class="buttonGroup">
+			<div class="oneDay" ng-class="{ active: showSub['jeudi'] }" ng-click="displaySubPage('jeudi')">Jeudi</div>
+			<div class="oneDay" ng-class="{ active: showSub['vendredi'] }" ng-click="displaySubPage('vendredi')">Vendredi</div>
+			<div class="oneDay" ng-class="{ active: showSub['weekend'] }" ng-click="displaySubPage('weekend')">Week-end</div>
+		</div>
+	</div>
+	
 	<!-- <div class="textBlock" ng-show="!showSub['any']">
 		<h3>Qu'est-ce qu'on fait pendant 4 jours ?</h3>
 		<p>
