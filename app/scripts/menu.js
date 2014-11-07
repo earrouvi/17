@@ -9,7 +9,6 @@ angular.module('controllers')
 
 		$scope.goToPage = function(page) {
 			$location.path(page);
-			jQuery(document).scroll(0);
 			$scope.init();
 		};
 
@@ -18,7 +17,7 @@ angular.module('controllers')
 		};
 
 		$scope.generateRandomPhotos = function() {
-			for (var i = 0; i < 6; i++) {
+			for (var i = 0; i < 7; i++) {
 				var rand = Math.floor(Math.random() * 17) + 1;
 				while (_.contains($scope.randArray, rand)) {
 					rand = rand % 17 + 1;
@@ -28,6 +27,7 @@ angular.module('controllers')
 		};
 
 		$scope.init = function() {
+			jQuery(document).scrollTop(0);
 			$scope.randArray = [];
 			$scope.generateRandomPhotos();
 		};
