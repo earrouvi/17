@@ -1,9 +1,6 @@
 #photosBlock {
 	display: inline-block;
-	right: 20px;
-	width: 15%;
 	margin-bottom: 12px;
-	margin-left: 1%;
 	overflow: hidden;
 }
 
@@ -12,20 +9,80 @@ img {
 	border-radius: 8px;
 }
 
-.photo1 { background-image: url(../images/photo1.png); }
-.photo2 { background-image: url(../images/photo2.png); }
-.photo3 { background-image: url(../images/photo3.png); }
-.photo4 { background-image: url(../images/photo4.png); }
-.photo5 { background-image: url(../images/photo5.png); }
-.photo6 { background-image: url(../images/photo6.png); }
-.photo7 { background-image: url(../images/photo7.png); }
-.photo8 { background-image: url(../images/photo8.png); }
-.photo9 { background-image: url(../images/photo9.png); }
-.photo10 { background-image: url(../images/photo10.png); }
-.photo11 { background-image: url(../images/photo11.png); }
-.photo12 { background-image: url(../images/photo12.png); }
-.photo13 { background-image: url(../images/photo13.png); }
-.photo14 { background-image: url(../images/photo14.png); }
-.photo15 { background-image: url(../images/photo15.png); }
-.photo16 { background-image: url(../images/photo16.png); }
-.photo17 { background-image: url(../images/photo17.png); }
+@media (min-width: 1024px) {
+	.bigAssContainer {
+		margin-left: 300px;
+	}
+	#menuBlock {
+		width: 300px;
+		height: 100%;
+		line-height: 40px;
+		font-size: 1.8em;
+	}
+	#contentBlock {
+		width: 83%;
+	}
+	#photosBlock {
+		width: 15%;
+		margin-left: 1%;
+	}
+	.textBlock {
+		margin-left: 2%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.bigAssContainer {
+		margin-left: 200px;
+	}
+	#menuBlock {
+		width: 200px;
+		height: 100%;
+		line-height: 30px;
+		font-size: 1.4em;
+	}
+	#contentBlock {
+		width: 83%;
+	}
+	#photosBlock {
+		width: 15%;
+		margin-left: 1%;
+	}
+	.textBlock {
+		margin-left: 2%;
+	}
+}
+
+@media (max-width: 768px) {
+	.bigAssContainer {
+		width: 100%;
+		margin-top: 120px;
+	}
+	#menuBlock {
+		width: 100%;
+		min-height: 60px;
+		line-height: 30px;
+		font-size: 1em;
+		text-align: center;
+		background: none #ed145b;
+	}
+	#menuBlock div {
+		display: inline-block;
+		border-radius: 4px;
+		border-right: none !important;
+		width: 130px;
+		height: 30px;
+		padding: 8px 0;
+		margin: 8px 2px 8px;
+	}
+	#contentBlock {
+		width: 100%;
+	}
+	#photosBlock {
+		width: 0%;
+		margin-left: 1%;
+	}
+	.textBlock {
+		margin-left: 2%;
+	}
+}

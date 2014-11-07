@@ -23,8 +23,7 @@ a {
 }
 
 .bigAssContainer {
-	background-color: #03042b;
-	margin-left: 300px;
+	background: url(../images/background.png);
 }
 
 .container {
@@ -35,7 +34,6 @@ a {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100%;
 	width: 300px;
 	background: url(../images/pattern_small.png);
 }
@@ -48,8 +46,6 @@ a {
 	padding: 16px 8px;
 	cursor: pointer;
 	font-family: 'Aclonica', Arial, sans-serif;
-	font-size: 1.8em;
-	line-height: 40px;
 }
 
 #menuBlock div:hover {

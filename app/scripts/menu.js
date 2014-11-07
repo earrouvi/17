@@ -9,6 +9,7 @@ angular.module('controllers')
 
 		$scope.goToPage = function(page) {
 			$location.path(page);
+			jQuery(document).scroll(0);
 			$scope.init();
 		};
 
@@ -27,7 +28,6 @@ angular.module('controllers')
 		};
 
 		$scope.init = function() {
-			jQuery(document).scroll(0);
 			$scope.randArray = [];
 			$scope.generateRandomPhotos();
 		};
