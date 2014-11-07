@@ -1,31 +1,9 @@
 <div class="container">
 	<h1>Les news</h1>
-	<div class="textBlock">
-		<h3>Concours de logo</h3>
-		<p class="newsDate">30 Octobre 2014</p>
-		<p>Nous organisons un concours de logo, auquel tout le monde (vieux, jeune, simple, polard, minorités) peut participer. Ce logo sera utilisé notamment pour les Ecocups et d'éventuels T-shirts. Pour que tu puisses laisser libre cours à ton imagination, nous te laissons carte blanche. Il n'y a que trois règles : le logo doit représenter la <span class="important">Fanfrale et les 17 ans</span>, il ne doit comporter qu'<span class="important">une seule couleur</span> et il faut soumettre les propositions <span class="important">avant le 7 décembre 2014 à 17h17</span>. Vous pouvez faire part de vos œuvres à la mailing Fanfrale, mais nous vous demandons de les adresser à Jean-Michel : <a href="mailto:17ansfanfrale@gmail.com">17ansfanfrale@gmail.com</a></p>
 
-		<p>Le meilleur logo sera ensuite sélectionné par le staff dictature-17 sur des critères totalement subjectifs et aléatoires.</p>
-	</div>
-
-	<div class="textBlock">
-		<h3>Le programme</h3>
-		<p class="newsDate">23 Octobre 2014</p>
-		<p>Ce qui est sûr :
-			<ol>
-				<li>Date : du jeudi 7 au soir au dimanche 10 Mai 2015 : SAVE THE DATE.</li>
-				<li>Lieu : un ancien camp de vacances EDF méga grand à une heure de Nantes, où nous vous laisserons la possibilité de développer un humour sans contraintes ni limites.
-				<li>On a beaucoup de pognon.</li>
-				<li>La soirée du jeudi s'oriente vers un début de soirée à Centrale avec des officiels (Jean-Maaaaaaaarrrrrrrccccccc Guitar Ayrault avec un masque de Dark Vador) et l'administration de Centrale pour les remercier et tout le tintouin mondain, le but étant d'obtenir une subvention de la part de l'école pour développer le point 2. Après c'est direction bar et Race.</li>
-				<li>Vendredi soir : soirée entre Fanfrale et fanfares étoiles de la Fanfrale. On se retrouve dans un bar et les fanfares affiliées joueront un set. Cette soirée sera ouverte au public. Les fanfares étoiles : Moustaches, WestCostars, Chapoum, Soubas Résille, SOTT, Baraka, SDS, Canal Chips.</li>
-				<li>Samedi matin : on décale pour le camp de vacances. Les fanfares invitées seront attendues pour le début d'aprem (jouage + animation + concours + repas = gros bonheur)</li>
-				<li>Dimanche : This is the barre !</li>
-			</ol>
-		</p>
-	</div>
-
-	<div class="textBlock">
-		<h3>C'est parti !!!</h3>
-		<p class="newsDate">01 Septembre 2014</p>
+	<div ng-repeat="post in pastPosts | orderBy:'date':true" class="textBlock">
+		<h3>{{ post.title }}</h3>
+		<p class="newsDate">{{ post.date.format('LL') }} par {{ post.author }}</p>
+		<p ng-bind-html="post.content"></p>
 	</div>
 </div>
