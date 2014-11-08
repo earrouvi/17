@@ -2,11 +2,12 @@
 	<h1>La Fanfrale et ses petits</h1>
 	<div class="textBlock etoile-div" ng-repeat="fanfare in fanfares">
 		<div class="etoile">
-			<img src="../../../17/app/images/etoile/{{fanfare.shortName}}-small.png" />
+			<img ng-show="fanfare.photo != ''" src="../../../17/app/images/etoile/{{fanfare.shortName}}-small.png" />
+			<img ng-show="fanfare.photo == ''" src="../../../17/app/images/etoile/default-small.png" />
 		</div>
 		<div class="etoile-info">
 			<h3>{{ fanfare.longName }}</h3>
-			<a href="{{fanfare.url}}">Leur site</a>
+			<a ng-show="fanfare.url != ''" href="{{fanfare.url}}">Leur site</a>
 			<p>{{ fanfare.description }}</p>
 		</div>
 	</div>
