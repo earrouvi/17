@@ -17,7 +17,7 @@
 	</div>
 
 	<div class="textBlock">
-		<h3>Comment puis-je participer ?</h3>
+		<h3 style="color: orange">Comment puis-je participer ?</h3>
 		<p>La Fanfrale t'a nourri(e), bercé(e) et aujourd'hui tu voudrais lui faire savoir ta gratitude, mais tu n'as pas beaucoup de temps à lui consacrer car tu dois te rendre à Aubenas. Ne t'en fais pas, nous avons pensé à toi : tu peux participer au financement de ce week-end inoubliable, et en profiter pour recevoir des goodies ! Choisis ton pack de mécène, fais un chèque de beaucoup d'argent et c'est parti !</p>
 
 		<p class="file"><a href="../../../17/app/resources/packs.pdf" target="_blank" title="Packs de participation">Télécharge le descriptif des packs de participation</a></p>
@@ -33,22 +33,6 @@
 			<div class="oneDay" ng-class="{ active: showSub['weekend'] }" ng-click="displaySubPage('weekend')">Week-end</div>
 		</div>
 	</div>
-	
-	<!-- <div class="textBlock" ng-show="!showSub['any']">
-		<h3>Qu'est-ce qu'on fait pendant 4 jours ?</h3>
-		<p>
-			<ul>
-				<li><strong>Jeudi soir :</strong>Première partie de soirée à l'ECN. Cocktail classe pour lancer les hostilités, remercier les gens qui nous donnent des sous et nous supportent. Deuxième partie de soirée : pèlerinage à Nantes avec Vestiaire, remplaçant Gargouille, Remorqueur et Crevettes.</li>
-				<li><strong>Vendredi après-midi :</strong>Les fanfares nantaises, la Fanfrale ainsi que les fanfares composées d'anciens de la Fanfrale jouent dans les rues de Nantes.</li>
-				<li><strong>Vendredi soir :</strong>Soirée dans un bar avec ces fanfares. Au programme, buffet et bœuf (vous pourrez aussi jouer de la musique).</li>
-				<li><strong>Samedi midi :</strong>Accueil de toutes les fanfares invitées sur le terrain, distribution de goodies, repas.</li>
-				<li><strong>Samedi après-midi :</strong>Lancement des stands à thème (cf. encadré plus haut).</li>
-				<li><strong>Samedi soir :</strong>Grand repas assis.</li>
-				<li><strong>Dimanche midi :</strong>Gros barbecue.</li>
-				<li><strong>Dimanche fin d'après-midi :</strong>Départ des fanfares.</li>
-			</ul>
-		</p>
-	</div> -->
 
 	<div class="textBlock" ng-show="showSub['jeudi']" id="jeudi">
 		<h2>Le jeudi</h2>
@@ -64,6 +48,8 @@
 
 	<div class="textBlock" ng-show="showSub['weekend']" id="weekend">
 		<h2>Le week-end</h2>
-		<p>Description à venir</p>
+		<p>Samedi midi : accueil de toutes les fanfares invitées sur le terrain, distribution de goodies, repas.</p>
+		<p>Samedi soir : grand repas assis, mongolie et autres réjouissances.</p>
+		<p>Dimanche : pour faire passer la barre, on se fait un barbecue ! Les fanfares partent dans l'après-midi.</p>
 	</div>
 </div>
