@@ -1,5 +1,8 @@
 <div class="container">
 	<h1>La Fanfrale et ses petits</h1>
+
+	<div class="whirly" ng-hide="fanfares.length > 0">load</div>
+
 	<div class="textBlock etoile-div" ng-repeat="fanfare in fanfares">
 		<div class="etoile">
 			<img ng-show="fanfare.photo != ''" src="../../../17/app/images/etoile/{{fanfare.shortName}}-small.png" />
