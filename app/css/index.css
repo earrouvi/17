@@ -87,14 +87,11 @@ a {
 }
 
 .caPart {
-	font-size: 2em;
 	font-weight: 700;
 	text-align: center;
 	background-color: #ed145b;
 	color: #03042b;
-	width: 500px;
 	margin: auto;
-	padding: 8px 12px 12px;
 	border-radius: 8px;
 }
 
