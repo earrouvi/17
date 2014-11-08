@@ -27,29 +27,36 @@
 	</div>
 
 	<div id="daysDetail">
-		<div class="buttonGroup">
-			<div class="oneDay" ng-class="{ active: showSub['jeudi'] }" ng-click="displaySubPage('jeudi')">Jeudi</div>
-			<div class="oneDay" ng-class="{ active: showSub['vendredi'] }" ng-click="displaySubPage('vendredi')">Vendredi</div>
-			<div class="oneDay" ng-class="{ active: showSub['weekend'] }" ng-click="displaySubPage('weekend')">Week-end</div>
-		</div>
-	</div>
+		<h3>Le programme</h3>
+		<table>
+			<tr>
+				<td class="oneDay" id="jeudiClick" ng-class="{ active: showSub['jeudi'] }" ng-click="displaySubPage('jeudi')">Jeudi</td>
 
-	<div class="textBlock" ng-show="showSub['jeudi']" id="jeudi">
-		<h2>Le jeudi</h2>
-		<p>Première partie de soirée à l'ECN. Cocktail classe pour lancer les hostilités, remercier les gens qui nous donnent des sous et nous supportent. 
-		<br/>Deuxième partie de soirée : pèlerinage à Nantes avec Vestiaire, remplaçant Gargouille, Remorqueur et Crevettes.</p>
-	</div>
+				<td rowspan="3" class="textBlock" ng-show="showSub['jeudi']" id="jeudi">
+					<h3>Le jeudi</h3>
+					<p>Première partie de soirée à l'ECN. Cocktail classe pour lancer les hostilités, remercier les gens qui nous donnent des sous et nous supportent. 
+					<br/>Deuxième partie de soirée : pèlerinage à Nantes avec Vestiaire, remplaçant Gargouille, Remorqueur et Crevettes.</p>
+				</td>
 
-	<div class="textBlock" ng-show="showSub['vendredi']" id="vendredi">
-		<h2>Le vendredi</h2>
-		<p>Les fanfares nantaises, la Fanfrale ainsi que les fanfares composées d'anciens de la Fanfrale jouent dans les rues de Nantes.
-		<br/>Vendredi soir : soirée dans un bar avec ces fanfares. Au programme, buffet et bœuf (vous pourrez aussi jouer de la musique).</p>
-	</div>
+				<td rowspan="3" class="textBlock" ng-show="showSub['vendredi']" id="vendredi">
+					<h3>Le vendredi</h3>
+					<p>Les fanfares nantaises, la Fanfrale ainsi que les fanfares composées d'anciens de la Fanfrale jouent dans les rues de Nantes.
+					<br/>Vendredi soir : soirée dans un bar avec ces fanfares. Au programme, buffet et bœuf (vous pourrez aussi jouer de la musique).</p>
+				</td>
 
-	<div class="textBlock" ng-show="showSub['weekend']" id="weekend">
-		<h2>Le week-end</h2>
-		<p>Samedi midi : accueil de toutes les fanfares invitées sur le terrain, distribution de goodies, repas.</p>
-		<p>Samedi soir : grand repas assis, mongolie et autres réjouissances.</p>
-		<p>Dimanche : pour faire passer la barre, on se fait un barbecue ! Les fanfares partent dans l'après-midi.</p>
+				<td rowspan="3" class="textBlock" ng-show="showSub['weekend']" id="weekend">
+					<h3>Le week-end</h3>
+					<p>Samedi midi : accueil de toutes les fanfares invitées sur le terrain, distribution de goodies, repas.
+					<br/>Samedi soir : grand repas assis, mongolie et autres réjouissances.
+					<br/>Dimanche : pour faire passer la barre, on se fait un barbecue ! Les fanfares partent dans l'après-midi.</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="oneDay" id="vendrediClick" ng-class="{ active: showSub['vendredi'] }" ng-click="displaySubPage('vendredi')">Vendredi</td>
+			</tr>
+			<tr>
+				<td class="oneDay" id="weekendClick" ng-class="{ active: showSub['weekend'] }" ng-click="displaySubPage('weekend')">Weekend</td>
+			</tr>
+		</table>
 	</div>
 </div>

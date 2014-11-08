@@ -127,65 +127,6 @@ a {
 	font-style: italic;
 }
 
-#daysDetail {
-	width: 50%;
-	height: 42px;
-	border-radius: 4px;
-	display: inline-block;
-	margin-top: 24px;
-}
-
-.buttonGroup {
-	display: inline-block;
-}
-
-.oneDay {
-	background-color: #ecdecd;
-    border-radius: 2px;
-    border: 2px solid #ecdecd;
-	color: #03042b;
-	font-weight: bold;
-	font-size: 1.6em;
-	text-align: center;
-	vertical-align: middle;
-	display: inline-block;
-	cursor: pointer;
-	float: left;
-    padding: 8px 32px;
-    margin-left: -1px;
-}
-
-.oneDay:hover {
-	background-color: orange;
-}
-
-.oneDay.active {
-	background-color: #ed145b;
-}
-
-.oneDay:not(:first-child):not(:last-child) {
-    border-radius: 0;
-}
-
-.oneDay:first-child:not(:last-child):not(.dropdown-toggle) {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-}
-
-.oneDay:last-child:not(:first-child) {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-}
-
-.oneDay:last-child:not(:first-child) {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-}
-
-#daysDetail > .oneDay:first-child {
-    margin-left: 0;
-}
-
 .whirly {
 	margin-top: 100px !important;
 }
