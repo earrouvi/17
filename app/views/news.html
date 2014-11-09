@@ -1,7 +1,7 @@
 <div class="container">
 	<h1>Les news</h1>
 
-	<div class="whirly" ng-hide="pastPosts.length > 0">load</div>
+	<div class="whirly" ng-hide="pastPosts.length > 0"></div>
 
 	<div ng-repeat="post in pastPosts | orderBy:'date':true" class="textBlock">
 		<h3>{{ post.title }}</h3>

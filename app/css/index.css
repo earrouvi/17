@@ -92,11 +92,12 @@ a {
 	background-color: #ed145b;
 	color: #03042b;
 	margin: auto;
+	cursor: pointer;
 	border-radius: 8px;
 }
 
 .caPart {
-    background-color: #ecdecd;
+    background-color: orange;
     -webkit-transition: background-color 1000ms ease;
     -moz-transition: background-color 1000ms ease;
     -o-transition: background-color 1000ms ease;
